@@ -14,7 +14,7 @@ WHERE lengt>
 SELECT * FROM film 
 WHERE rental_rate >
 (
-    SELECT MAX (rental_rate) FROM film
+    SELECT MAX(rental_rate) FROM film
 )
 
 --film tablosunda en düşük rental_rate ve en düşün replacement_cost değerlerine sahip filmleri sıralayınız.
